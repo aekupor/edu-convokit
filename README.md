@@ -8,7 +8,7 @@
 
 The **Edu-ConvoKit** is an open-source framework designed to facilitate the study of conversation language data in educational settings.
 It provides a practical and efficient pipeline for essential tasks such as text pre-processing, annotation, and analysis, tailored to meet the needs of researchers and developers.
-This toolkit aims to enhance the accessibility and reproducibility of educational language data analysis, as well as advance both natural language processing (NLP) and education research.
+This convokit aims to enhance the accessibility and reproducibility of educational language data analysis, as well as advance both natural language processing (NLP) and education research.
 By simplifying these key operations, the Edu-ConvoKit supports the efficient exploration and interpretation of text data in education.
 
 Our publication on Edu-ConvoKit can be found here: https://arxiv.org/pdf/2402.05111.pdf
@@ -93,12 +93,12 @@ Here's an example of using `preprocess` to anonymize the dataset with known name
 
 ```python 
 
->> from edu_toolkit.preprocessors import TextPreprocessor
+>> from edu_convokit.preprocessors import TextPreprocessor
 # For helping us flexibly load data
->> from edu_toolkit import utils
+>> from edu_convokit import utils
 
 # First get the data
->> !wget "https://raw.githubusercontent.com/rosewang2008/edu-toolkit/master/data/talkmoves/Boats and Fish 2_Grade 4.xlsx"
+>> !wget "https://raw.githubusercontent.com/rosewang2008/edu-convokit/master/data/talkmoves/Boats and Fish 2_Grade 4.xlsx"
 >> data_fname = "Boats and Fish 2_Grade 4.xlsx"
 >> df = utils.load_data(data_fname) # Handles loading data from different file types including: .csv, .xlsx, .json
 
